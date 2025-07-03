@@ -8,6 +8,11 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+if [ -z "$2" ]; then
+    echo "Użycie: $0 nazwa_miasta API_KLUCZ"
+    exit 1
+fi
+API_KEY="$2"
 CITY="$1"
 URL="https://api.openweathermap.org/data/2.5/weather?q=$CITY&appid=$API_KEY&units=metric"
 
