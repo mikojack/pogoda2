@@ -3,6 +3,7 @@
 # Twój klucz API dla OpenWeatherMap
 # zmian dla zmian
 # Sprawdzenie, czy podano miasto
+# Zmian dla zmiany
 if [ -z "$1" ]; then
     echo "Użycie: $0 nazwa_miasta"
     exit 1
