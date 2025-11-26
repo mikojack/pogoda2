@@ -34,3 +34,4 @@ else
     curl "https://wttr.in/$CITY?format=2"
     exit 1
 fi
+exit 1
