@@ -1,6 +1,13 @@
 pipeline {
     agent any
     stages {
+        stage('Git checkout') {
+            steps{
+                sh'''
+                ls -la
+                '''
+            }
+        }
         stage('Skrypt pogoda') {
             steps{
             script {
