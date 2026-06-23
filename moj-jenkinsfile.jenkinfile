@@ -2,6 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Skrypt pogoda') {
+            steps{
             script {
                 sh'''
                     #!/bin/bash
@@ -36,6 +37,7 @@ pipeline {
                     echo ""
                     sleep 20
                 '''
+            }
             }
         }
     }
